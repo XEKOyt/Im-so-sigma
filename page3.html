@@ -3,19 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>why 40k is good</title>
+    <title>Why 40K Is Good</title>
+    <style>
+        :root {
+            --primary-color: #6200ea;
+            --secondary-color: #3700b3;
+            --accent-color: #03dac6;
+            --background: #121212;
+            --text-color: #e0e0e0;
+            --warhammer-red: #a30000;
+            --warhammer-gold: #ffd700;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='%23a30000' fill-opacity='0.05' d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z'%3E%3C/path%3E%3C/svg%3E");
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .warhammer-header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--warhammer-red), #000);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            border: 2px solid var(--warhammer-gold);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: var(--warhammer-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        h2 {
+            color: var(--warhammer-gold);
+            border-bottom: 2px solid var(--warhammer-red);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+        
+        .reasons-list {
+            list-style-type: none;
+            padding: 0;
+            counter-reset: warhammer-counter;
+        }
+        
+        .reasons-list li {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: rgba(163, 0, 0, 0.2);
+            border-radius: 8px;
+            border-left: 5px solid var(--warhammer-red);
+            font-size: 1.2rem;
+            position: relative;
+            padding-left: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .reasons-list li:hover {
+            transform: translateX(5px);
+            background-color: rgba(163, 0, 0, 0.3);
+        }
+        
+        .reasons-list li::before {
+            counter-increment: warhammer-counter;
+            content: counter(warhammer-counter);
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--warhammer-red);
+            color: var(--warhammer-gold);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .heretic {
+            color: var(--warhammer-red);
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { text-shadow: 0 0 5px var(--warhammer-red); }
+            50% { text-shadow: 0 0 20px var(--warhammer-red); }
+            100% { text-shadow: 0 0 5px var(--warhammer-red); }
+        }
+        
+        .warhammer-image {
+            display: block;
+            border-radius: 10px;
+            border: 3px solid var(--warhammer-gold);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin: 10px 0;
+            transition: transform 0.3s ease;
+        }
+        
+        .warhammer-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .home-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .home-link:hover {
+            color: #fff;
+            text-shadow: 0 0 10px var(--accent-color);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        
+        .nav-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--warhammer-red);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--warhammer-gold);
+        }
+        
+        .nav-button:hover {
+            background: var(--warhammer-gold);
+            color: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
-    <ins> <h1> i'm going to talk about about warhammer 40k because why not</h1></ins>
- <ol> <h2>5 reason why  warhammer is good:</h2>
-    <li> because there is more lore than atoms in the universe </li>
-    <li>this image: <br> <img src="imgs\img5.jpg"height="200" width="200"></li>
-    <li>if you don't think 40k is good then you're a heretic</li>
-    <li>Emperor's Children are violet, T'au are blue, and YOU are a fucking <b>heretic</b>!</li>
-    <li>you can paint the miniatures👍 </li>
-
-
-
-    </ol>
+    <div class="container fade-in">
+        <a href="index.html" class="home-link">← Go back to page 1</a>
+        
+        <div class="warhammer-header">
+            <h1>I'm Going To Talk About Warhammer 40K Because Why Not</h1>
+        </div>
+        
+        <h2>5 Reasons Why Warhammer Is Good:</h2>
+        
+        <ol class="reasons-list">
+            <li>Because there is more lore than atoms in the universe</li>
+            
+            <li>This image: <br>
+                <img src="imgs/img5.jpg" class="warhammer-image" height="200" width="200" alt="Warhammer image">
+            </li>
+            
+            <li>If you don't think 40k is good then you're a <span class="heretic">heretic</span></li>
+            
+            <li>Emperor's Children are violet, T'au are blue, and YOU are a fucking <span class="heretic">heretic</span>!</li>
+            
+            <li>You can paint the miniatures 👍</li>
+        </ol>
+        
+        <div class="navigation">
+            <a href="index.html" class="nav-button">Back to Page 1</a>
+            <a href="page2.html" class="nav-button">Go to Page 2</a>
+        </div>
+    </div>
 </body>
 </html>

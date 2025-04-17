@@ -1,36 +1,180 @@
-<!DOCTYPE html> 
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>hello there</title>
-<body>
-<!--yeah I may be capping >:(-->
-    <h1>  I am  <a href="https://www.youtube.com/watch?v=41O_MydqxTU" target=_blank title="proof that I... am steve!">
-        steve 
-    </a> </h1>
-
-<hr>
-
-    <p>no i'm not capping i'm <big><b>steve</b></big> lil bro. as a child <mark> I yearned for the mines.</mark>     </p>
-
-
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-<img src="imgs\img1.gif" height="210" width="1000" alt="I... am STEVE! " title="real picture of me don't worry">
-</a>
-
-
-<br>
-<br>
-<hr>
-<br>
-<br>
-    <a href="page2.html"  title="go to page 2">
-       <h2></h2> go to page 2</h2>
-       <a href="page3.html"  title="go to page 3">
-        <h2></h2> go to page 3</h2>
-</body>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello There</title>
+    <style>
+        :root {
+            --primary-color: #6200ea;
+            --secondary-color: #3700b3;
+            --accent-color: #03dac6;
+            --background: #121212;
+            --text-color: #e0e0e0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        .steve-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .steve-link:hover {
+            color: #fff;
+            text-shadow: 0 0 10px var(--accent-color);
+        }
+        
+        .intro {
+            font-size: 1.25rem;
+            background-color: rgba(98, 0, 234, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        mark {
+            background-color: var(--accent-color);
+            color: #000;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        
+        .steve-big {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+        
+        .image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .steve-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .steve-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        
+        .nav-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        .nav-button:hover {
+            background: var(--accent-color);
+            color: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .divider {
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+            margin: 40px 0;
+            border: none;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
-
-</html> 
+<body>
+    <div class="container fade-in">
+        <header>
+            <h1>I am <a href="https://www.youtube.com/watch?v=41O_MydqxTU" target="_blank" title="proof that I... am steve!" class="steve-link">steve</a></h1>
+        </header>
+        
+        <p class="intro">no i'm not capping i'm <span class="steve-big">steve</span> lil bro. as a child <mark>I yearned for the mines.</mark></p>
+        
+        <div class="image-container">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <img src="imgs/img1.gif" class="steve-image" alt="I... am STEVE!" title="real picture of me don't worry">
+            </a>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="navigation">
+            <a href="page2.html" title="go to page 2" class="nav-button">Go to Page 2</a>
+            <a href="page3.html" title="go to page 3" class="nav-button">Go to Page 3</a>
+        </div>
+        
+        <footer>
+            © Steve's Authentic Website - Definitely Not Capping
+        </footer>
+    </div>
+</body>
+</html>
